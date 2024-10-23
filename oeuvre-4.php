@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php include "includes/header.php"; ?>
 
 <article id="detail-oeuvre">
@@ -14,3 +15,37 @@
 </article>
 
 <?php include "includes/footer.php"; ?>
+=======
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>The ArtBox</title>
+</head>
+
+<body>
+    <?php include "includes/header.php"; ?>
+    <main>
+        <article id="detail-oeuvre">
+            <div id="img-oeuvre">
+                <img src="img/steve-johnson-5.png" alt="Le refuge de l'Havre">
+            </div>
+            <div id="contenu-oeuvre">
+                <h1>Le refuge de l'Havre</h1>
+                <p class="description">Simon Pelletier</p>
+                <p class="description-complete">
+                    Nam tempus neque nec felis venenatis auctor. Nam velit risus, lobortis eu quam non, interdum efficitur nibh. Phasellus a augue ac orci lacinia mattis et vel lectus. Sed nec tellus urna. Donec at turpis turpis. Cras quam tellus, imperdiet vitae finibus id, varius quis felis. Maecenas blandit eleifend risus, vel hendrerit erat dignissim id. Nullam at laoreet nibh. Nulla gravida varius sollicitudin. Etiam non aliquam diam, tempor varius sapien. Aenean et velit eu nisi lobortis massa nunc.
+                </p>
+            </div>
+        </article>
+    </main>
+    <?php include "includes/footer.php"; ?>
+</body>
+
+</html>
+>>>>>>> 555319edb6fd5574a3ecaca61bad45c592f1e293

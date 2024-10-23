@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php include "includes/header.php"; ?>
 <article id="detail-oeuvre">
     <div id="img-oeuvre">
@@ -12,3 +13,37 @@
     </div>
 </article>
 <?php include "includes/footer.php"; ?>
+=======
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>The ArtBox</title>
+</head>
+
+<body>
+    <?php include "includes/header.php"; ?>
+    <main>
+        <article id="detail-oeuvre">
+            <div id="img-oeuvre">
+                <img src="img/pawel-czerwinski.png" alt="Chromatics">
+            </div>
+            <div id="contenu-oeuvre">
+                <h1>Chromatics</h1>
+                <p class="description">Jean-Michel Delatronchette</p>
+                <p class="description-complete">
+                    Vivamus commodo non libero at hendrerit. In lacinia dui sit amet pellentesque iaculis. Donec at ultricies sem porttitor.
+                </p>
+            </div>
+        </article>
+    </main>
+    <?php include "includes/footer.php"; ?>
+</body>
+
+</html>
+>>>>>>> 555319edb6fd5574a3ecaca61bad45c592f1e293
