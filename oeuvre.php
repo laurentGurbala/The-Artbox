@@ -1,16 +1,23 @@
-<?php include "templates/header.php";
+<?php
+include "templates/header.php";
+include "data/bdd.php";
 
-$id = $_GET["id"];
-$oeuvre = null;
+$bdd = connexion();
 
-include "data/oeuvres.php";
+// Si l'url ne contient pas d'id
+// redirection sur la page d'accueil
+if (empty($_GET["id"])) {
+    header("Location: index.php");
+}
 
-$oeuvre = isset($oeuvres[$id]) ? $oeuvres[$id] : null;
+$requete = $bdd->prepare("SELECT * FROM oeuvres WHERE id = ?");
+$requete->execute([$_GET["id"]]);
+$oeuvre = $requete->fetch();
 
-if ($oeuvre === null) {
-    echo "<p>Œuvre introuvable. Vérifiez que l'ID est correct.</p>";
-    include "includes/footer.php";
-    exit();
+// Si l'oeuvre n'existe pas,
+// redirection vers l'accueil
+if (!$oeuvre) {
+    header("Location: index.php");
 }
 ?>
 
@@ -20,7 +27,7 @@ if ($oeuvre === null) {
     </div>
     <div id="contenu-oeuvre">
         <h1><?php echo $oeuvre["title"]; ?></h1>
-        <p class="description"><?php echo $oeuvre["artist"]; ?></p>
+        <p class="description"><?php echo $oeuvre["artiste"]; ?></p>
         <p class="description-complete">
             <?php echo $oeuvre["description"]; ?>
         </p>
