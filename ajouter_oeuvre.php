@@ -20,3 +20,5 @@
 
     <input type="submit" value="Valider">
 </form>
+
+<?php include "templates/footer.php"; ?>

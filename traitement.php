@@ -22,7 +22,6 @@ if (
     // Insertion à la bdd
     $bdd = connexion();
 
-    print_r($_POST);
     $requete = $bdd->prepare('INSERT INTO oeuvres (title, description, artiste, image) VALUES (?, ?, ?, ?)');
     $requete->execute([$titre, $description, $artiste, $image]);
 
