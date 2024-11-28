@@ -10,7 +10,7 @@ function connexion()
     global $dbPassword;
 
     return new PDO(
-        "mysql:host=$dbHost;dbname=$dbName;charset=utf8",
+        "mysql:host=$dbHost;port=3307;dbname=$dbName;charset=utf8",
         "$dbUser",
         $dbPassword
     );
